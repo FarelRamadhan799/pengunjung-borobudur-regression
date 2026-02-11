@@ -1,7 +1,7 @@
 pandas 
-scikt-learn
-seabron 
 matplotlib
+seaborn
+scikit-learn
+streamlit>=1.32.0
 joblib
-streamlit>=1.62.0
-altrair==6.0.0
+altair==6.0.0
