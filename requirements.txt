@@ -1,0 +1,7 @@
+pandas 
+scikt-learn
+seabron 
+matplotlib
+joblib
+streamlit>=1.62.0
+altrair==6.0.0
