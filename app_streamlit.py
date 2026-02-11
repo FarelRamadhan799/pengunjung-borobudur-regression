@@ -7,7 +7,7 @@ model = joblib.load("model_forest.joblib")
 st.title("Prediksi Pengunjung Borobudur")
 st.markdown("Memprediksi jumlah pengunjung Borobudur")
 
-hari_type = st.pills("Hari Type", ["weekend", "weekdays"], default = "weekend")
+hari_type = st.pills("Hari Type", ["weekend", "weekday"], default = "weekend")
 musim = st.pills("Musim", ["kemarau", "hujan"], default = "kemarau")
 suhu_rata_rata = st.slider("Suhu  Rata-rata", 0.0, 50.0, 25.0)
 ada_event_budaya = st.pills("Ada Event Budaya?", ["ya", "tidak"], default="ya")
@@ -18,3 +18,4 @@ if st.button("prediksi"):
 	prediksi = model.predict(data_baru)[0]
 	st.success(f"Jumlah Pengunjung yang datang sekitar {prediksi:.0f}")
 	st.balloons()
+
